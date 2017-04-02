@@ -1,0 +1,2 @@
+ adb -s 192.168.56.101:5555 shell monkey -v 10000 -s 0402 --throttle 300 --ignore-crashes --ignore-timeouts >monkey_forOS.txt
+ adb -s 192.168.56.101:5555 shell monkey -p com.android.gallery  -v 10000 -s 040201 --pct-touch 30 --pct-trachball 0 --pct-motion 10 --pct-nav 5 --pct-appswitch 0 --pct-anyevent 5 --throttle 300 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --kill-process-after-error >monkey_forAPP.txt
